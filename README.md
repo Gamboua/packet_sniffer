@@ -16,7 +16,7 @@ Este projeto é uma aplicação Python que captura pacotes de rede, armazena os 
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/packet-sniffer.git
+   git clone https://github.com/Gamboua/packet-sniffer.git
    cd packet-sniffer
     ```
 2. Construa e inicie os containers usando Docker Compose:
@@ -27,3 +27,6 @@ Este projeto é uma aplicação Python que captura pacotes de rede, armazena os 
 
 4. Os pacotes capturados serão armazenados no MongoDB, que está disponível na porta 27017 do host.
 
+5. O serviço ficará capturando pacotes na interface de rede especificada (eth0, ou você pode alterá-la no código). Para parar a execução, basta pressionar Ctrl+C.
+
+6. O MongoDB estará disponível na porta 27017 e os dados serão armazenados na coleção packets.
